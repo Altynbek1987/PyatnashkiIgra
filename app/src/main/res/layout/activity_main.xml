@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bac"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:visibility="gone" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_timer"
+        android:layout_width="149dp"
+        android:layout_height="55dp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="43dp"
+        android:background="@drawable/bac_timer"
+        android:elevation="25dp"
+        android:fontFamily="@font/text"
+        android:shadowRadius="25"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+
+    -
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+
+        -
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_1"
+                android:layout_width="91dp"
+                android:layout_height="109dp"
+                android:layout_margin="5dp"
+                android:background="#C9F9FC"
+                android:textSize="34sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_2"
+                android:layout_width="91dp"
+                android:layout_height="109dp"
+                android:layout_margin="5dp"
+                android:background="#C9F9FC"
+                android:textSize="34sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_3"
+                android:layout_width="91dp"
+                android:layout_height="109dp"
+                android:layout_margin="5dp"
+                android:background="#C9F9FC"
+                android:textSize="34sp" />
+
+        </LinearLayout>
+
+
+        -
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linear1">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_4"
+                android:layout_width="91dp"
+                android:layout_height="109dp"
+                android:layout_margin="5dp"
+                android:background="#C9F9FC"
+                android:textSize="34sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_5"
+                android:layout_width="91dp"
+                android:layout_height="109dp"
+                android:layout_margin="5dp"
+                android:background="#C9F9FC"
+                android:textSize="34sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_6"
+                android:layout_width="91dp"
+                android:layout_height="109dp"
+                android:layout_margin="5dp"
+                android:background="#C9F9FC"
+                android:textSize="34sp" />
+
+        </LinearLayout>
+
+
+        -
+
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linear2">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_7"
+                android:layout_width="91dp"
+                android:layout_height="109dp"
+                android:layout_margin="5dp"
+                android:background="#C9F9FC"
+                android:textSize="34sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_8"
+                android:layout_width="91dp"
+                android:layout_height="109dp"
+                android:layout_margin="5dp"
+                android:background="#C9F9FC"
+                android:textSize="34sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_9"
+                android:layout_width="91dp"
+                android:layout_height="109dp"
+                android:layout_margin="5dp"
+                android:background="#C9F9FC"
+                android:textSize="34sp" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnRestart"
+        android:layout_width="172dp"
+        android:layout_height="53dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="#00D2FF"
+        android:fontFamily="@font/text"
+        android:text="Рестарт"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+</FrameLayout>

@@ -18,6 +18,7 @@ public class FinishActivity extends AppCompatActivity {
         btnRestart.setOnClickListener(v -> {
             Intent i = new Intent(FinishActivity.this, MainActivity.class);
             startActivity(i);
+            finish();
         });
     }
 

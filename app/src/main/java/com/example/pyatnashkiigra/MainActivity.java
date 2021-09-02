@@ -16,7 +16,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     List<String> texts;
-    TextView timer;
+   // TextView timer;
     ImageView image;
     CountDownTimer countDownTimer;
     AppCompatButton button1, button2, button3, button4, button5, button6, button7, button8, button9;
@@ -39,13 +39,14 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void setTimer() {
-        countDownTimer = new CountDownTimer(120000, 1000) {
+        countDownTimer = new CountDownTimer(100000, 1000) {
             public void onTick(long millisUntilFinished) {
                 btntimer.setText(String.valueOf(millisUntilFinished / 1000));
             }
             public void onFinish() {
                 Intent i = new Intent(MainActivity.this, FinishActivity.class);
                 startActivity(i);
+                finish();
             }
         }.start();
     }
@@ -210,6 +211,7 @@ public class MainActivity extends AppCompatActivity {
             Intent i = new Intent(MainActivity.this, WinActivity.class);
             startActivity(i);
             cancelM();
+            finish();
         }
     }
 

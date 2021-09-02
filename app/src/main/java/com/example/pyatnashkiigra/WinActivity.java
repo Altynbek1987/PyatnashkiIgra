@@ -21,6 +21,7 @@ public class WinActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(WinActivity.this, MainActivity.class);
                 startActivity(i);
+                finish();
             }
         });
     }

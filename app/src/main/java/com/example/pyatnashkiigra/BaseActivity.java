@@ -22,6 +22,7 @@ public class BaseActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(BaseActivity.this, MainActivity.class);
                 startActivity(i);
+                finish();
             }
         });
     }

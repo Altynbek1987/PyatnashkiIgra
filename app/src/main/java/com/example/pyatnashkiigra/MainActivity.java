@@ -27,11 +27,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         initViews();
         mixList();
         setText();
         setupListeners();
+        setTimer();
         btnRestart.setOnClickListener(v -> {
             setTimer();
         });
@@ -39,12 +39,10 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void setTimer() {
-        countDownTimer = new CountDownTimer(60000, 1000) {
+        countDownTimer = new CountDownTimer(120000, 1000) {
             public void onTick(long millisUntilFinished) {
                 btntimer.setText(String.valueOf(millisUntilFinished / 1000));
-
             }
-
             public void onFinish() {
                 Intent i = new Intent(MainActivity.this, FinishActivity.class);
                 startActivity(i);
